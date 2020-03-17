@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+
+
+:root {
+  /* cyan */
+  --primary-color: hsl(179, 62%, 43%);
+  /* bright yellow */
+  --secondary-color: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background: var(--light-gray);
+}
+
+
+
+.container {
+  max-width: 1186px;
+  margin: auto auto;
+  padding: 2rem;
+
+
+
+}
+
+#one .community {
+  padding-top: 2rem;
+  height: 26vh;
+  font-weight: 700;
+}
+
+#one .l-heading {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+#one .guarantee {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+#one .text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--grayish-blue);
+  margin-top: 2rem;
+}
+
+#two {
+
+  height: 40vh;
+
+}
+
+#two .awesome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#two .sign-up {
+  padding: 3rem;
+  background: hsl(179, 62%, 40%);
+  height: 40vh;
+  color: var(--light-gray);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+#two .sign-up h2,
+#two .why-us h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#two .sign-up p {
+  padding: 1rem;
+}
+
+#two .sign-up .dollar-sign {
+  content: "\0024";
+  display: inline;
+  font-size: 3rem;
+}
+
+#two .sign-up .per-m {
+  font-size: 1.5rem;
+  padding: .5rem;
+  color: hsl(204, 43%, 80%);
+}
+
+#two .sign-up .access {
+  font-size: 1.5rem;
+}
+
+#two .sign-up .btn {
+  display: block;
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid hsl(179, 62%, 43%);
+  background: var(--secondary-color);
+  box-shadow: 0px 5px 2px 5px hsl(179, 62%, 30%, 30%);
+  font-size: 1.2rem;
+  color: var(--light-gray);
+
+}
+
+#two .sign-up .btn:hover {
+  background: hsl(179, 62%, 80%);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+
+
+#two .why-us {
+  padding: 3rem;
+  background: hsl(179, 62%, 45%);
+  color: var(--light-gray);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+#two .awesome .why-us span {
+  color: hsl(204, 43%, 85%);
+  padding: .5rem;
+  display: block;
+}
+
+
+
+/* Footer */
+
+#main-footer {
+  margin-top: 20vh;
+  font-size: 1rem;
+  color: var(--grayish-blue);
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: var(--primary-color)
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* media */
+@media(max-width: 800px) {
+  #one .text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  #two .awesome {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+  }
+
+
+
+  #two .sign-up {
+    height: 35vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+
+  #two .sign-up .btn {
+    width: 90%;
+  }
+
+  #two .why-us {
+    padding: 3rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+  }
+
+  #main-footer {
+    margin-top: 50vh;
+    padding: 2rem;
+
+  }
+}
+
+@media(max-width: 667px) {
+  #one .community {
+    padding-top: 2rem;
+    height: 300px;
+    font-weight: 700;
+  }
+
+  #one .text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  #two .awesome {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+  }
+
+
+
+  #two .sign-up {
+    height: 60vh;
+    border-radius: 5px;
+    font-size: 1rem;
+
+  }
+
+  #two .sign-up .btn {
+    width: 90%;
+  }
+
+  #two .why-us {
+    padding: 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+
+  }
+
+  #main-footer {
+    margin-top: 700px;
+    padding: 2rem;
+
+  }
+}
+
+@media(max-width: 400px) {
+  #two .sign-up {
+    height: 400px;
+
+
+  }
+
+  #main-footer {
+    margin-top: 400px;
+    padding: 2rem;
+
+  }
+}
+
+@media(max-width: 375px) {
+  #main-footer {
+    margin-top: 700px;
+
+
+  }
+
+}
+
+@media(max-width: 360px) {
+  #two .sign-up {
+    height: 400px;
+  }
+
+  #main-footer {
+    margin-top: 730px;
+    padding: 2rem;
+
+  }
+}
+
+@media(max-width: 320px) {
+  #one .l-heading {
+    font-size: 2.5rem;
+    line-height: 1.;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  #one .guarantee {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--secondary-color);
+
+  }
+
+  #one .text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+
+  }
+
+  #two .sign-up {
+    height: 430px;
+
+
+  }
+
+  #main-footer {
+    margin-top: 800px;
+    padding: 2rem;
+
+  }
+}
